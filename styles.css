@@ -239,6 +239,32 @@ a:hover {
     }
 }
 
+/* LOGOS SECTION */
+.logos-section {
+    display: none;
+}
+
+.logos-cards {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.logos-card {
+    border: 1px solid var(--clr-gray-300);
+    border-radius: 0.5em;
+    padding: 1em;
+    display: grid;
+    place-items: center;
+    flex: 1;
+    width: 100%;
+
+
+    img {
+        width: 100%;
+    }
+}
+
 /* APP FEATURES SECTION */
 
 .container-app-features {
@@ -252,7 +278,6 @@ a:hover {
 }
 
 .app-features-content {
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -269,7 +294,6 @@ a:hover {
         text-align: center;
     }
 }
-
 
 .app-features-cards {
     display: grid;
@@ -304,7 +328,40 @@ a:hover {
     }
 }
 
+/* HOW-SECTION */
 
+.container-how {
+    
+}
+
+.h2-how-section {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.mobile-images-mobile {
+
+}
+
+.mobile-images-tablet {
+    display: none;
+}
+
+.mobile-images-desktop {
+    display: none;
+}
+
+.how-content-mobile {
+
+}
+
+.how-content-tablet {
+    display: none;
+}
+
+.how-content-desktop {
+    display: none;
+}
 
 
 
@@ -312,6 +369,10 @@ a:hover {
 @media (width >= 768px) {
     .container {
         max-width: 720px;
+        
+    }
+
+    .header-container {
         gap: 3rem;
     }
 
@@ -349,6 +410,19 @@ a:hover {
         
     }
 
+    /* LOGOS SECTION */
+
+    .logos-section {
+        display: block;
+    }
+
+    .logos-card-4 {
+        display: none;
+    }
+    .logos-card-5 {
+        display: none;
+    }
+
     /* APP FEATURES SECTION */
 
     .app-features-cards {
@@ -356,6 +430,15 @@ a:hover {
         grid-template-columns: 1fr 1fr;
     }
 
+    .app-features-content h2 {
+        font-size: 33px;
+    }
+
+    /* HOW-SECTION */
+
+    .h2-how-section {
+        font-size: 33.5px;
+    }
 }
 
 
@@ -366,6 +449,10 @@ a:hover {
 @media (width >= 1400px) {
     .container{
         max-width: 1320px;
+        
+    }
+
+    .header-container {
         display: grid;
         grid-template-columns: auto 1fr auto auto;
     }
@@ -392,6 +479,14 @@ a:hover {
     } */
 
 
+    /* LOGOS SECTION */
+
+    .logos-card-4 {
+        display: block;
+    }
+    .logos-card-5 {
+        display: block;
+    }
 
     /* APP-FEATURES SECTION */
 
@@ -410,19 +505,23 @@ a:hover {
     }
 
     .app-features-content {
-
-        
+        gap: .5rem;
         
         h2 {
             text-align: left;
+            font-size: 40px;
         }
 
         .h2-paragraph {
             text-align: left;
         }
-        
     }
 
+    /* HOW-SECTION */
+
+    .h2-how-section {
+        font-size: 40px;
+    }
     
     
 }
