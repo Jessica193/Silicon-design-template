@@ -330,8 +330,15 @@ a:hover {
 
 /* HOW-SECTION */
 
+.how-section {
+    background-color: var(--clr-gray-100);
+}
+
 .container-how {
-    
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    padding-block: 4rem;
 }
 
 .h2-how-section {
@@ -352,15 +359,60 @@ a:hover {
 }
 
 .how-content-mobile {
+    text-align: center;
 
+    h5 {
+        font-size: 21.6px;
+        font-weight: 800;
+        padding-inline: 3rem;
+        margin-bottom: 1rem;
+
+    }
+
+    p {
+        font-size: 16px;
+        color: #585C7B;
+    }
 }
 
 .how-content-tablet {
     display: none;
+
+    text-align: center;
+    
+        h5 {
+            font-size: 22.7px;
+            font-weight: 800;
+            padding-inline: 8rem;
+            margin-bottom: 1rem;
+    
+        }
+    
+        p {
+            font-size: 16px;
+            color: #585C7B;
+            padding-inline: 8rem;
+        }
 }
 
 .how-content-desktop {
     display: none;
+
+    text-align: center;
+    
+    h5 {
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: var(--clr-gray-900);
+
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 700px;
+        color: var(--clr-gray-800);
+    }    
 }
 
 
@@ -439,6 +491,22 @@ a:hover {
     .h2-how-section {
         font-size: 33.5px;
     }
+
+    .mobile-images-mobile {
+    display: none;
+    }
+    
+    .mobile-images-tablet {
+        display: block;
+    }
+
+    .how-content-mobile {
+        display: none;
+    }
+    
+    .how-content-tablet {
+        display: block;
+    }
 }
 
 
@@ -495,9 +563,9 @@ a:hover {
     }
 
     .container-app-features {
-        max-width: 1320px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
 
         h2 {
             text-align: left;
@@ -522,11 +590,25 @@ a:hover {
     .h2-how-section {
         font-size: 40px;
     }
+
+    .mobile-images-tablet {
+        display: none;
+    }
     
+    .mobile-images-desktop {
+        display: block;
+    }
     
+    .how-content-tablet {
+        display: none;
+    }
+    
+    .how-content-desktop {
+        display: block;
 }
 
 
+}
 
 
 
