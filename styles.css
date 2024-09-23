@@ -33,11 +33,36 @@ body {
     font-size: 16px;
 }
 
+/* UTILITY CLASSES */
+
+.grey-box {
+    height: 50px;
+    width: 50px;
+    border-radius: .5em;
+    border: none;
+    background-color: var(--clr-gray-100);
+    display: grid;
+    place-items: center;
+}
+
 .container {
     width: 100%;
     margin: 1rem auto;
     padding-inline: 1rem; 
     padding-block: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: .5em;
+    padding: .5em 2em;
+    text-decoration: none;
+
+    &:hover{
+        background-color: hsl(239, 84%, 73%);
+    color: white;
+    }
 }
 
 .header-container {
@@ -53,6 +78,12 @@ a {
 a:hover {
     color: var(--clr-primary);
 }
+
+
+
+
+
+
 
 .navbar {
     display: none;
@@ -113,27 +144,14 @@ a:hover {
     left: 4px;
     bottom: 4px;
 }
+    
 
-.btn-primary {
-    background-color: var(--clr-primary);
-    color: white;
-    border-radius: .5em;
-    padding: .5em 2em;
+#auth-signin {
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    text-decoration: none;
-    
-
-    &:hover{
-        background-color: hsl(239, 84%, 73%);
-    color: white;
-    }
-}
-
-#auth-signin {
-    display: none;
 }
 
 .btn-mobile{
@@ -306,16 +324,6 @@ a:hover {
     display: flex;
     gap: 2rem;
 
-    .grey-box {
-        height: 50px;
-        width: 50px;
-        border-radius: .5em;
-        border: none;
-        background-color: var(--clr-gray-100);
-        display: grid;
-        place-items: center;
-    }
-
     h6 {
         font-size: 20px;
         font-weight: 800;
@@ -415,6 +423,71 @@ a:hover {
     }    
 }
 
+/* HOW-2-SECTION */
+
+.how-2-section {
+    padding-block: 3rem;
+}
+
+.container-how-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+
+    h3 {
+        font-size: 32px;
+        color: var(--clr-gray-900);
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        max-width: 80%;
+    }
+}
+
+.money-transfer {
+
+
+    .btn-money-transfer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        gap: 1rem;
+          
+    }
+}
+
+.how-2-list {
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    li {
+        list-style: none;
+        color: var(--clr-gray-800);
+        font-size: 16px;
+    }
+}
+
+.receive-payment-cards {
+    display: flex;
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+
+    .grey-box {
+        margin-bottom: 2rem;
+    }
+}
+
+.btn-money-transfer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
@@ -507,6 +580,8 @@ a:hover {
     .how-content-tablet {
         display: block;
     }
+
+    /* HOW-2-SECTION */
 }
 
 
@@ -606,6 +681,8 @@ a:hover {
     .how-content-desktop {
         display: block;
 }
+
+/* HOW-2-SECTION */
 
 
 }
