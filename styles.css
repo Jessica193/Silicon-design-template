@@ -709,8 +709,6 @@ a:hover {
 .newsletter-input {
     display: flex;
     justify-content: center;
-    
-
 
     input {
         font-size: 1rem;
@@ -722,10 +720,9 @@ a:hover {
         background-repeat: no-repeat;
         background-position: 0.5rem 50% ;
         width: 100%;
-        
     }
 
-    
+
     .btn-subscribe {
         border-radius: 0 0.5em 0.5em 0;
         border: none;
@@ -734,8 +731,20 @@ a:hover {
         font-weight: 600;
         line-height: 25.6px; 
     }
+}
 
-   
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font: size 14px;
+        color: var(--clr-gray-600);
+        line-height: 160%;
+        text-align: center;
+    }
 }
 
 
@@ -908,6 +917,28 @@ a:hover {
 
     .FAQ-cards {
         display: flex;
+    }
+
+    /* NEWSLETTER-SECTION */
+
+    .container-newsletter {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        
+        .subscribe {
+            margin-bottom: 0;
+            margin-left: 1rem;
+
+            h5 {
+                font-size: 22.7px;
+                line-height: 31.8px;
+            }
+        }
+
+        .newsletter-input {
+            margin-right: 1rem;
+        }
     }
 
 }
@@ -1101,6 +1132,27 @@ a:hover {
             margin-bottom: 3rem;
             max-width: 70%;
         }
+    }
+
+    /* NEWSLETTER-SECTION */
+
+    .container-newsletter {
+        padding-inline: 4rem;
+    }
+    .subscribe {
+        flex: 1;
+
+        .subscribe-h5-desktop {
+            display: block;
+        }
+
+        .subscribe-h5-mobile {
+            display: none;
+        }
+    }
+
+    .newsletter-input {
+        flex: 1;
     }
 }
  
