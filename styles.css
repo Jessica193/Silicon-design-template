@@ -36,8 +36,8 @@ body {
 /* UTILITY CLASSES */
 
 .grey-box {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border-radius: .5em;
     border: none;
     background-color: var(--clr-gray-100);
@@ -299,7 +299,6 @@ a:hover {
 }
 
 .app-features-card {
-
     display: flex;
     gap: 2rem;
 
@@ -312,6 +311,16 @@ a:hover {
     p {
         font-size: 16;
         color: #585C7B ;
+    }
+
+
+
+    .app-features-card-content {
+        flex: 1;
+    }
+
+    .grey-box-1 {
+        /* flex: 1; */
     }
 }
 
@@ -1041,6 +1050,10 @@ footer {
 
     .app-features-content {
         gap: .5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        
         
         h2 {
             text-align: left;
@@ -1049,6 +1062,7 @@ footer {
 
         .h2-paragraph {
             text-align: left;
+            margin-bottom: 3rem;
         }
     }
 
