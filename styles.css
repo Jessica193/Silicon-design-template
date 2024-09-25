@@ -679,13 +679,18 @@ a:hover {
 
 .container-newsletter {
     background-color: var(--clr-gray-100);
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subscribe {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     .subscribe-h5-mobile {
         font-size: 21.6px;
@@ -701,7 +706,37 @@ a:hover {
     }
 }
 
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    
 
+
+    input {
+        font-size: 1rem;
+        padding: .5em;
+        border-radius: 0.5em 0 0 0.5em;
+        border: 1px solid #9397AD;
+        padding-left: 2em;
+        background-image: url(/images/envelope.svg);
+        background-repeat: no-repeat;
+        background-position: 0.5rem 50% ;
+        width: 100%;
+        
+    }
+
+    
+    .btn-subscribe {
+        border-radius: 0 0.5em 0.5em 0;
+        border: none;
+        padding: 1em 1em;
+        font-size: 1rm;
+        font-weight: 600;
+        line-height: 25.6px; 
+    }
+
+   
+}
 
 
 
