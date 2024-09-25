@@ -25,6 +25,16 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+html {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+
+
+}
+
 body {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -186,7 +196,7 @@ a:hover {
     .h1-paragraph {
         font-size: 18px;
         margin-bottom: 3rem;
-        color: #585C7B;
+        color: var(--clr-gray-800);
         text-align: center;
     }
     .download {
@@ -225,7 +235,7 @@ a:hover {
     }
         
     a {
-        color: #585C7B;
+        color: var(--clr-gray-800);
         font-size: 14px;
     }
 }
@@ -287,7 +297,7 @@ a:hover {
 
     .h2-paragraph {
         font-size: 18;
-        color: #585C7B ;
+        color: var(--clr-gray-800) ;
         text-align: center;
     }
 }
@@ -310,7 +320,7 @@ a:hover {
 
     p {
         font-size: 16;
-        color: #585C7B ;
+        color: var(--clr-gray-800) ;
     }
 
 
@@ -319,9 +329,6 @@ a:hover {
         flex: 1;
     }
 
-    .grey-box-1 {
-        /* flex: 1; */
-    }
 }
 
 /* HOW-SECTION */
@@ -366,7 +373,7 @@ a:hover {
 
     p {
         font-size: 16px;
-        color: #585C7B;
+        color: var(--clr-gray-800);
     }
 }
 
@@ -385,7 +392,7 @@ a:hover {
     
         p {
             font-size: 16px;
-            color: #585C7B;
+            color: var(--clr-gray-800);
             padding-inline: 8rem;
         }
 }
@@ -576,7 +583,7 @@ a:hover {
     h3 {
         font-size: 24.7px;
         line-height: 32.1px;
-        color: #131022;
+        color: var(--clr-gray-900);
         font-weight: 800;
         margin-bottom: 1rem;
     }
@@ -584,7 +591,7 @@ a:hover {
     p {
         font-size: 18px;
         line-height: 28.8px;
-        color: #585C7B;
+        color: var(--clr-gray-800);
         margin-bottom: 2rem;
     }
 }
@@ -600,6 +607,10 @@ a:hover {
         padding: 1rem;
         display: flex;
         justify-content: space-between;
+    }
+
+    button {
+        color: var(--clr-gray-900);
     }
 
     .q-top {
@@ -619,6 +630,7 @@ a:hover {
             margin-bottom: 2rem;
             line-height: 22.4px;
             font-size: 14px;
+            color: var(--clr-gray-800);
         }
     }
 }
@@ -630,6 +642,9 @@ a:hover {
     margin-bottom: 2rem;
     display: none;
     
+    button {
+        color: var(--clr-gray-900);
+    }
 
     .q-t {
         border: none;
@@ -648,6 +663,10 @@ a:hover {
             justify-content: space-between;
             margin-bottom: 1rem;
         }
+
+        p {
+            color: var(--clr-gray-800);
+        }
     }
 }
 
@@ -665,6 +684,7 @@ a:hover {
         gap: 1rem;
         width: 100%;
         padding: 2rem;
+        color: var(--clr-gray-800);
 
         a {
             display: flex;
@@ -705,6 +725,7 @@ a:hover {
         font-size: 21.6px;
         line-height: 30.2px;
         font-weight: 800;
+        color: var(--clr-gray-900);
     }
 
     .subscribe-h5-desktop {
@@ -712,6 +733,7 @@ a:hover {
         line-height: 140%;
         font-weight: 800;
         display: none;
+        color: var(--clr-gray-900);
     }
 }
 
