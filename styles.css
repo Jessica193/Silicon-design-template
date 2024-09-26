@@ -48,6 +48,23 @@ html {
     --clr-bg-FAQ-q: hsl(0, 0%, 12%);
     --clr-bg-download: #F3F6FF;
 
+    .content {
+        .btn-download {
+            .apptore-light-img {
+                display: none;
+            }
+            .apptore-dark-img {
+                display: block;
+            }
+            .googleplay-light-img {
+                display: none;
+            }
+            .googleplay-dark-img {
+                display: block;
+            }
+        }
+    }
+
 }
 
 body {
@@ -189,7 +206,7 @@ a:hover {
     font-size: 2rem;
 }
 
-/* Hero section */
+/* HERO-SECTION */
 
 .hero-section {
     background: linear-gradient(0deg, rgba(99,102,241,0.10362401796656162) 0%, rgba(218,70,239,0.050402729451155426) 42%, rgba(241,244,253,0.07001057258841037) 83%); 
@@ -230,6 +247,13 @@ a:hover {
         align-items: center;
         text-decoration: none;
         border: none;
+
+        .apptore-dark-img {
+            display: none;
+        }
+        .googleplay-dark-img {
+            display: none;
+        }
     } 
 }
 .discover-more {
@@ -866,10 +890,12 @@ footer {
     }
 
 
-    .content .download {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 2rem;
+    .content {
+        .download {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 2rem;
+        }
     }
 
     .discover-more {
