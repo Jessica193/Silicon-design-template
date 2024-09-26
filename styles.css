@@ -44,7 +44,7 @@ html {
     --clr-gray-700: #fff;
     --clr-gray-800: #fff;
     --clr-gray-900: #fff;
-    --clr-bg-feedback-card:hsl(0, 0%, 12%);
+    --clr-bg-feedback-card:hsl(0, 0%, 16%);
     --clr-bg-FAQ-q: hsl(0, 0%, 12%);
     --clr-bg-download: #F3F6FF;
 
@@ -454,6 +454,8 @@ a:hover {
 }
 
 .money-transfer {
+    display: flex;
+    flex-direction: column;
 
 
     .btn-money-transfer{
@@ -467,11 +469,12 @@ a:hover {
 }
 
 .how-2-list {
+    margin-bottom: 2rem;
     div {
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     li {
         list-style: none;
@@ -480,9 +483,15 @@ a:hover {
     }
 }
 
+.receive-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .receive-payment-cards {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 
     margin-bottom: 3rem;
 
