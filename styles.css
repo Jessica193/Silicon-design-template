@@ -16,6 +16,10 @@
     --clr-success: #22C55E;
     --clr-warning: #FFBA08;
     --clr-info: #4C82F7;
+
+    --clr-bg-feedback-card:#fff;
+    --clr-bg-FAQ-q: #fff;
+    --clr-bg-download: #0B0F19;
 }
 
 * {
@@ -31,7 +35,18 @@ html {
 
 .dark {
     color-scheme: dark;
-
+    --clr-gray-100: hsl(0, 0%, 12%);
+    --clr-gray-200: #EFF2FC;
+    --clr-gray-300: #E2E5F1;
+    --clr-gray-400: #D4D7E5;
+    --clr-gray-500: #B4B7C9;
+    --clr-gray-600: #6366F1;
+    --clr-gray-700: #fff;
+    --clr-gray-800: #fff;
+    --clr-gray-900: #fff;
+    --clr-bg-feedback-card:hsl(0, 0%, 12%);
+    --clr-bg-FAQ-q: hsl(0, 0%, 12%);
+    --clr-bg-download: #F3F6FF;
 
 }
 
@@ -206,7 +221,7 @@ a:hover {
         gap: 1rem;  
     }
     .btn-download {
-        background-color: #000;
+        background-color: var(--clr-bg-download);
         color: white;
         border-radius: .5em;
         padding: .5em 2em;
@@ -506,7 +521,7 @@ a:hover {
 }
 .feedback-card {
     flex: 1;
-    background-color: #fff;
+    background-color: var(--clr-bg-feedback-card);
     padding: 1.5rem;
     box-shadow: 0 0 5px #00000005;
     border-radius: .5em;
@@ -540,7 +555,7 @@ a:hover {
     .profession {
         grid-area: profession;
         font-size: 14px;
-        color: var(--clr-gray-600);
+        color: var(--clr-gray-700);
     }
 
     .avatar {
@@ -607,6 +622,7 @@ a:hover {
         padding: 1rem;
         display: flex;
         justify-content: space-between;
+        background-color: var(--clr-bg-FAQ-q);
     }
 
     button {
@@ -653,6 +669,7 @@ a:hover {
         padding: 1rem;
         display: flex;
         justify-content: space-between;
+        background-color: var(--clr-bg-FAQ-q);
     }
 
     .q-t-text {
