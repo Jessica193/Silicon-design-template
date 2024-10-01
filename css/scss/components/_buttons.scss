@@ -1,0 +1,12 @@
+.btn-primary {
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: .5em;
+    padding: 1em 2em;
+    text-decoration: none;
+
+    &:hover{
+        background-color: hsl(239, 84%, 73%);
+    color: white;
+    }
+}

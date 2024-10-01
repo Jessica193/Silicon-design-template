@@ -386,10 +386,6 @@ a:hover {
     font-size: 28px;
 }
 
-.mobile-images-mobile {
-
-}
-
 .mobile-images-tablet {
     display: none;
 }
@@ -839,6 +835,8 @@ footer {
         padding-inline: 0;
     }
 
+    /* HEADER */
+
     .header-container {
         gap: 3rem;
     }
@@ -1035,6 +1033,8 @@ footer {
         max-width: 1320px;
         padding-block: 5rem; 
     }
+
+    /* HEADER */
 
     .header-container {
         display: grid;
