@@ -39,18 +39,6 @@ html {
   --clr-bg-FAQ-q: hsl(0, 0%, 12%);
   --clr-bg-download: #F3F6FF;
 }
-.dark .content .btn-download .apptore-light-img {
-  display: none;
-}
-.dark .content .btn-download .apptore-dark-img {
-  display: block;
-}
-.dark .content .btn-download .googleplay-light-img {
-  display: none;
-}
-.dark .content .btn-download .googleplay-dark-img {
-  display: block;
-}
 
 * {
   margin: 0;
@@ -578,7 +566,7 @@ footer p {
   font-size: 2rem;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   .header-container {
     gap: 3rem;
   }
@@ -614,6 +602,21 @@ footer p {
   text-align: center;
   font-size: 34.1px;
   font-weight: 800;
+  line-height: 44.1px;
+  font-family: manrope;
+  font-style: normal;
+}
+@media (width >= 768px) {
+  .headliner h1 {
+    font-size: 44.3px;
+    line-height: 57.6px;
+  }
+}
+@media (width >= 1400px) {
+  .headliner h1 {
+    font-size: 56px;
+    line-height: 130%;
+  }
 }
 
 .content {
@@ -651,9 +654,9 @@ footer p {
 
 .discover-more {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -673,6 +676,19 @@ footer p {
 .mobile-image-1 {
   grid-area: mobile-image-1;
   display: none;
+}
+
+.dark .content .btn-download .apptore-light-img {
+  display: none;
+}
+.dark .content .btn-download .apptore-dark-img {
+  display: block;
+}
+.dark .content .btn-download .googleplay-light-img {
+  display: none;
+}
+.dark .content .btn-download .googleplay-dark-img {
+  display: block;
 }
 
 @media (width >= 768px) {
@@ -695,9 +711,9 @@ footer p {
   .headliner {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .headliner h1 {
-    font-size: 44.3px;
     max-width: 60%;
   }
   .content {
@@ -731,7 +747,6 @@ footer p {
     margin: 0;
   }
   .headliner h1 {
-    font-size: 56px;
     max-width: 90%;
     text-align: left;
   }

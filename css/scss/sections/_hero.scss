@@ -7,8 +7,7 @@
     grid-area: headliner;
     h1 {
         text-align: center;
-        font-size: 34.1px;
-        font-weight: 800;
+        @include h1;
     }
 }
 
@@ -47,10 +46,8 @@
     } 
 }
 .discover-more {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
 
@@ -74,6 +71,25 @@
     display: none;
 }
 
+.dark {
+    .content {
+        .btn-download {
+            .apptore-light-img {
+                display: none;
+            }
+            .apptore-dark-img {
+                display: block;
+            }
+            .googleplay-light-img {
+                display: none;
+            }
+            .googleplay-dark-img {
+                display: block;
+            }
+        }
+    }
+}
+
 
 
 
@@ -88,8 +104,7 @@
     }
 
     .mobile-image-1 {
-        display: grid;
-        place-items: center;
+        @include grid-center;
 
         img {
             width: 100%;
@@ -99,11 +114,9 @@
     }
 
     .headliner {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         
         h1 {
-            font-size: 44.3px;
             max-width: 60%;   
         }
     }
@@ -152,7 +165,6 @@
         margin: 0;
         
         h1 {
-            font-size: 56px;
             max-width: 90%; 
             text-align: left;  
         }
@@ -175,3 +187,5 @@
         margin-bottom: 12rem;
     }
 }
+
+

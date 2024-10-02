@@ -70,23 +70,20 @@
     
 
 #auth-signin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: .5rem;
     display: none;
 }
 
 .btn-mobile{
-    display: grid;
-    place-items: center;
+    @include grid-center;
     background-color: transparent;
     border: none;
     font-size: 2rem;
 }
 
 
-@media (width >= 768px) {
+@include tablet {
     .header-container {
         gap: 3rem;
     }
