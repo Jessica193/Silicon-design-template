@@ -66,6 +66,16 @@ body {
   background-color: hsl(239, 84%, 73%);
   color: white;
 }
+.btn-primary:focus {
+  background-color: hsl(239, 84%, 73%);
+  color: white;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--clr-primary);
+}
 
 .container {
   width: 100%;
@@ -89,6 +99,10 @@ body {
 }
 a {
   text-decoration: none;
+}
+a:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--clr-primary);
 }
 
 a:hover {
@@ -490,6 +504,9 @@ footer p {
   display: flex;
   align-items: center;
 }
+#logo .silicon-logo-darkmode {
+  display: none;
+}
 
 .navbar {
   display: none;
@@ -564,6 +581,13 @@ footer p {
   background-color: transparent;
   border: none;
   font-size: 2rem;
+}
+
+.dark #logo .silicon-logo-darkmode {
+  display: block;
+}
+.dark #logo .silicon-logo-lightmode {
+  display: none;
 }
 
 @media (width > 768px) {

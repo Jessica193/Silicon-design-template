@@ -7,6 +7,10 @@
 #logo {
     display: flex;
     align-items: center;
+
+    .silicon-logo-darkmode {
+        display: none;
+    }
 }
 .navbar {
     display: none;
@@ -80,6 +84,17 @@
     background-color: transparent;
     border: none;
     font-size: 2rem;
+}
+
+.dark {
+    #logo {
+        .silicon-logo-darkmode {
+            display: block;
+        }
+        .silicon-logo-lightmode {
+            display: none;
+        }
+    }
 }
 
 
